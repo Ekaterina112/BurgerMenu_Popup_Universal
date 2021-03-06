@@ -10,6 +10,7 @@ const ModalWindow: React.FC<PropsType> = ({active, setActive, children}) => {
         <div className={`${active ? s.modal + ' ' + s.active : s.modal}`} onClick={() => setActive(false)}>
             <div className={`${active ? s.modalContent + ' ' + s.activeContent : s.modalContent}`}
                  onClick={e => e.stopPropagation()}>
+               {/* //place for form*/}
                 {children}
             </div>
         </div>
